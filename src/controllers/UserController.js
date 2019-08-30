@@ -1,14 +1,14 @@
-import * as Yup from 'yup';
+const { string, object, boolean } = require('yup');
 const User = require('../models/User');
 
 class UserController {
 
   async store(req, res) {
-    const schema = Yup.object().shape({
-      email: Yup.string().email().required(),
-      password: Yup.string().required().min(8),
-      cpf: Yup.string().required().min(11),
-      isadmin: Yup.boolean().required(),
+    const schema = object().shape({
+      email: string().email().required(),
+      password: string().required().min(8),
+      cpf: string().required().min(11),
+      isadmin: boolean().required(),
     });
 
     if(!(await schema.isValid(req.body))) {
