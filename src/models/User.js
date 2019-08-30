@@ -1,5 +1,5 @@
-import Sequelize, { Model } from 'sequelize';
-import bcrypt from 'bcryptjs';
+const Sequelize, { Model } = require('sequelize');
+const bcrypt = require('bcryptjs');
 
 class User extends Model {
   static init(sequelize) {

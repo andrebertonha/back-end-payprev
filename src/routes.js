@@ -1,11 +1,11 @@
-import express from 'express';
+const express = require('express');
 
-import UserController from './controllers/UserController';
+const UserController = require('./controllers/UserController');
 
-import authMiddleware from './middlewares/auth'
-import SessionController from './controllers/SessionController';
-import GitUserController from './controllers/GitUserController';
-import CommonGitUserController from './controllers/CommonGitUserController';
+const authMiddleware = require('./middlewares/auth');
+const SessionController = require('./controllers/SessionController');
+const GitUserController = require('./controllers/GitUserController');
+const CommonGitUserController = require('./controllers/CommonGitUserController');
 
 const routes = express.Router();
 

@@ -1,6 +1,6 @@
-import api from '../services/api';
-import GitUser from '../models/GitUser';
-import User from '../models/User';
+const api = require('../services/api');
+const GitUser = require('../models/GitUser');
+const User = require('../models/User');
 
 class GitUserController {
 

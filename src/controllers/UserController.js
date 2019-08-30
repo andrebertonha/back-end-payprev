@@ -1,5 +1,5 @@
 import * as Yup from 'yup';
-import User from '../models/User';
+const User = require('../models/User');
 
 class UserController {
 

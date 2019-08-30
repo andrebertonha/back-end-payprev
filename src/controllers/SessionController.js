@@ -1,9 +1,9 @@
-import jwt from 'jsonwebtoken';
+const jwt = require('jsonwebtoken');
 import * as Yup from 'yup';
 
-import User from '../models/User';
+const User = require('../models/User');
 
-import authConfig from '../config/auth';
+const authConfig = require('../config/auth');
 
 class SessionController {
 

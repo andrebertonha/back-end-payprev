@@ -7,7 +7,7 @@ require('dotenv/config');
 
 const app = express();
 
-import './database';
+require('./database');
 
 app.use(cors());
 app.use(express.json());

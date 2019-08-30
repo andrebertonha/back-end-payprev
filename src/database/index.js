@@ -1,10 +1,10 @@
-import Sequelize from 'sequelize';
+const Sequelize = require('sequelize');
 
-import User from '../models/User';
-import GitUser from '../models/GitUser';
-import Tag from '../models/Tag';
+const User = require('../models/User');
+const GitUser = require('../models/GitUser');
+const Tag = require('../models/Tag');
 
-import databaseConfig from '../config/database';
+const databaseConfig = require('../config/database');
 
 const models = [ User, GitUser, Tag ];
 

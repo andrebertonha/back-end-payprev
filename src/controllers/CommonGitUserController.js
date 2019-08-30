@@ -1,6 +1,6 @@
-import GitUser from '../models/GitUser';
-import User from '../models/User';
-import Tag from '../models/Tag';
+const GitUser = require('../models/GitUser');
+const User = require('../models/User');
+const Tag = require('../models/Tag');
 
 class CommonGitUserController {
   async index(req, res) {
