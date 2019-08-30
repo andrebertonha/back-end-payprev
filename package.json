@@ -5,6 +5,10 @@
   "main": "app.js",
   "author": "André Martins",
   "license": "MIT",
+  "engines": {
+    "node": "12.4.0",
+    "yarn": "1.16.0"
+  },
   "scripts": {
     "dev": "nodemon src/app.js"
   },
