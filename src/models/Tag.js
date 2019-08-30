@@ -17,4 +17,4 @@ class Tag extends Model {
   }
 }
 
-export default Tag;
+module.exports = Tag;

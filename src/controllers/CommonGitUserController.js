@@ -58,4 +58,4 @@ class CommonGitUserController {
   }
 }
 
-export default new CommonGitUserController();
+module.exports = new CommonGitUserController();

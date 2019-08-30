@@ -25,4 +25,4 @@ class GitUser extends Model {
 
 }
 
-export default GitUser;
+module.exports = GitUser;

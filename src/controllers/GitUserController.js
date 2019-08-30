@@ -37,4 +37,4 @@ class GitUserController {
 
 }
 
-export default new GitUserController();
+module.exports = new GitUserController();

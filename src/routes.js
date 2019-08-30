@@ -20,4 +20,4 @@ routes.post('/user', GitUserController.store);
 routes.get('/gitusers', CommonGitUserController.index);
 routes.post('/gitusers/:list', CommonGitUserController.store);
 
-export default routes;
+module.exports = routes;
