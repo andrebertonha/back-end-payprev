@@ -9,10 +9,6 @@ const CommonGitUserController = require('./controllers/CommonGitUserController')
 
 const routes = express.Router();
 
-
-routes.post('/sessions', SessionController.store);
-routes.use(authMiddleware);
-
 routes.post('/users', UserController.store);
 
 routes.get('/users/:login', GitUserController.index);
@@ -20,5 +16,8 @@ routes.post('/user', GitUserController.store);
 
 routes.get('/gitusers', CommonGitUserController.index);
 routes.post('/gitusers/:list', CommonGitUserController.store);
+
+routes.post('/sessions', SessionController.store);
+routes.use(authMiddleware);
 
 module.exports = routes;
