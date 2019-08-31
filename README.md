@@ -15,7 +15,7 @@
 + Banco de dados PostGres
   - Criar um banco de dados chamado payprev
   - Execute: yarn sequelize db:migrate
-
+  - Execute: yarn dev
 
 ## Rotas da api
 
