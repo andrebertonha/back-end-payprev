@@ -17,7 +17,6 @@ routes.post('/user', GitUserController.store);
 routes.get('/gitusers', CommonGitUserController.index);
 routes.post('/gitusers/:list', CommonGitUserController.store);
 
-routes.post('/sessions', SessionController.store);
-routes.use(authMiddleware);
+routes.post('/sessions', authMiddleware, SessionController.store);
 
 module.exports = routes;
