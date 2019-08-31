@@ -9,6 +9,7 @@ const CommonGitUserController = require('./controllers/CommonGitUserController')
 
 const routes = express.Router();
 
+routes.get('/', UserController.index);
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 

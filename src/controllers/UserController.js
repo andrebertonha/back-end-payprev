@@ -3,6 +3,10 @@ const User = require('../models/User');
 
 class UserController {
 
+  async index(req, res) {
+    return res.json({ ok: 'true' });
+  }
+
   async store(req, res) {
     const schema = object().shape({
       email: string().email().required(),
