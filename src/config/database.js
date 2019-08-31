@@ -2,7 +2,7 @@ require('dotenv/config');
 
 module.exports = {
   dialect: 'postgres',
-  host: 'localhost',
+  host: '127.0.0.1',
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
   database: 'payprev',
