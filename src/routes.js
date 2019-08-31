@@ -13,8 +13,6 @@ routes.get('/', UserController.index);
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
-
-
 routes.get('/users/:login', authMiddleware, GitUserController.index);
 routes.post('/user', authMiddleware, GitUserController.store);
 

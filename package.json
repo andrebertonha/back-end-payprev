@@ -10,8 +10,9 @@
     "yarn": "1.16.0"
   },
   "scripts": {
-    "dev": "nodemon src/app.js",
-    "start": "node src/app.js"
+    "dev": "nodemon src/app.js --ignore __tests__",
+    "start": "node src/app.js",
+    "test": "jest"
   },
   "heroku-postbuild": "yarn add --production",
   "dependencies": {
@@ -36,7 +37,10 @@
     "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.9.0",
     "nodemon": "^1.19.1",
-    "sucrase": "^3.10.1"
+    "sqlite3": "^4.1.0",
+    "sucrase": "^3.10.1",
+    "supertest": "^4.0.2"
   }
 }
