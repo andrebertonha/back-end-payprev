@@ -18,7 +18,13 @@
     },
 
     "production": {
-      "use_env_variable": "DATABASE_URL"
+      "use_env_variable": "DATABASE_URL",
+      "username": "kuwihkadfvyhlb",
+      "password": "b6c02b58684852d0867b40b6415a4e3b8c2e291594208525c2af310198065c1e",
+      "database": "d8itpll36etbkt",
+      "host": "ec2-54-83-9-36.compute-1.amazonaws.com",
+      "port": "5432",
+      "dialect": "postgres"
     }
 }
 
