@@ -1,26 +1,15 @@
 const express = require('express');
-const routes = require('./routes');
 const cors = require('cors');
+const routes = require('./routes');
+
+require('dotenv/config');
+
+const app = express();
 
 require('./database');
 
-class App {
-  constructor() {
-    this.server = express();
-    this.middlewares();
-    this.routes();
-  }
+app.use(cors());
+app.use(express.json());
+app.use(routes);
 
-  middlewares() {
-    this.server.use(cors());
-    this.server.use(express.json());
-  }
-
-  routes() {
-    this.server.use(routes);
-  }
-}
-
-module.exports = new App().server;
-
-
+app.listen(process.env.PORT || 3333);
