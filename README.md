@@ -48,7 +48,7 @@
   + Response 200 (application/json)
     token
 
-  
+  <br />
   <b>* Nas próximas rotas deve ter o token configurado (Bearer Token) </b>
   ### (admin user) Listar dados usuario github através de seu login [GET /users/:login]
 
