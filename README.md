@@ -50,7 +50,7 @@
 
   <br />
   <b>* Nas próximas rotas deve ter o token configurado (Bearer Token) </b>
-  <br />
+  
   ### (admin user) Listar dados usuario github através de seu login [GET /users/:login]
 
   + URL Parameters
